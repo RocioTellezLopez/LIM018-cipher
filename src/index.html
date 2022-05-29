@@ -19,17 +19,32 @@
     </header>
 
     <main>
-      <div id="root">
-        <p id="text1">Ingresar mensaje</p>
-        <input id="box1" type="text">
-        <p id="text2">Mensaje cifrado</p>
-        <input id="box2" type="tex">
-
-        <div class="botones">
-          <button id="cipherButton">Cifrar</button>
-          <button id="cleanbutton">Limpiar</button>
+      <div class="optionCipher">
+        <div class="boxCipher">
+          <!--Area para ingresar el mensaje ha cifrar-->
+          <label for="textContainer" id="text1">Ingresar mensaje</label>
+          <textarea id="textContainer" ></textarea>
         </div>
         
+        <div class="boxResult">
+          <!--Area del resultado ya cifrado-->
+          <label for="cipherResult" id="text2">Mensaje cifrado</label>
+          <textarea id="cipherResult"></textarea>
+        </div>
+
+        <div class="boxOffSet">
+          <!--Selección de desplazamiento-->
+          <label for="offSet">Desplazamiento</label><br>
+          <input type="number" id="offSet" name="offSet" min="1" max="200"><br>
+        </div>
+
+        <div class="botones">
+          <!--Botón para cifrar y limpiar-->
+          <button id="cipherButton">Cifrar</button>
+          <button id="cleanButton">Limpiar</button>
+        </div>
+        
+       
         
       </div>
     </main>

@@ -1,17 +1,26 @@
 const cipher = {
+   // ...
+   encode: (desplazamiento,mensaje) =>{
+    let repeticion = mensaje.length
+    let mostrarMensaje = ''
 
-  /*offset número de posiciones a la derecha, string el mensaje (texto) ha cifrar.*/
-  cipher.encode(offset, string)
+    for (let i=0 ; i<repeticion ; i++) {
+      let posicionAcsii =(mensaje.charCodeAt(i) - 65 + desplazamiento) % 26 + 65
+      let mensajeCifrado = String.fromCharCode(posicionAcsii)
+      mostrarMensaje = mostrarMensaje + mensajeCifrado
+      
+    }
+    console.log(mostrarMensaje)
+    return mostrarMensaje
 
+  }
 
+  decode: (desplazamiento,mensaje) => {}
 
-  /*offset número de posiciones a la izquierda , string el mensaje (texto) ha descifrar.*/
-  cipher.decode(offset, string)
+}
+ 
 
+cipher.encode(33,'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
-
-
-
-};
 
 export default cipher;

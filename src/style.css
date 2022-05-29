@@ -4,6 +4,8 @@
     height: 92px;
     left: 0px;
     top: 0px;
+
+    background-color: pink;
     
 }
 
@@ -71,7 +73,7 @@ a {
     color: #322783;
 }
 
-#box1 {
+#textContainer {
     position: absolute;
     width: 40%;
     height: 30%;
@@ -82,7 +84,7 @@ a {
     border-radius: 10px;
 }
 
-#box2 {
+#cipherResult {
     position: absolute;
     width: 40%;
     height: 30%;
@@ -93,9 +95,14 @@ a {
     border-radius: 10px;
 }
 
+.boxOffSet{
+    position: absolute;
+    top: 70%;
+    left: 87px;
+}
 .botones {
     position: absolute;
     top: 80%;
-    left: 20%;
+    left: 87px;
 
 }
