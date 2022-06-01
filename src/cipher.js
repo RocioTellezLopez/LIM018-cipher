@@ -1,5 +1,5 @@
 const cipher = {
-   // ...
+   // Metodo encode
    encode: (desplazamiento,mensaje) =>{
     let iteracion = mensaje.length
     let mostrarMensaje = ''
@@ -10,7 +10,7 @@ const cipher = {
       mostrarMensaje = mostrarMensaje + mensajeCifrado
       
     }
-    //console.log(mostrarMensaje)
+    console.log(mostrarMensaje)
     return mostrarMensaje
 
   },

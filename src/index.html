@@ -8,8 +8,7 @@
   </head>
   <body>
     <header class="navContainer">
-      <a id="brandCipher">CIPHERSAFE</a>
-      
+      <h1 id="brandCipher">CIPHERSAFE</h1>
       <nav class="lista">
         <a href="#">Inicio</a>
         <a href="#">Servicio</a>
@@ -18,7 +17,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="mainContent">
       <div class="optionCipher">
         <div class="boxCipher">
           <!--Area para ingresar el mensaje ha cifrar-->
@@ -26,7 +25,7 @@
           <textarea id="textContainer" ></textarea>
         </div>
         
-        <div class="boxResult">
+        <div id="boxResult">
           <!--Area del resultado ya cifrado-->
           <label for="cipherResult" id="text2">Mensaje cifrado</label>
           <textarea id="cipherResult"></textarea>
@@ -49,6 +48,8 @@
       </div>
     </main>
     
+    <footer id="footerContent"></footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
