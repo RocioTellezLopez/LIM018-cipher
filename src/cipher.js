@@ -21,6 +21,9 @@ const cipher = {
         
         mostrarMensaje = mostrarMensaje + mensajeCifrado
       }
+      else {
+        mostrarMensaje = mostrarMensaje + mensaje[i]
+      }
     }  
     /*console.log(mostrarMensaje)*/
     return mostrarMensaje
@@ -28,15 +31,27 @@ const cipher = {
   },
 
   decode: (desplazamiento,string) =>{
-    let mensaje = string.toUpperCase()
+    let mensaje = string
 
     let iteracion = mensaje.length
     let mostrarMensaje = ''
 
     for (let i=0; i<iteracion; i++) {
-      let posicionAcsii = (mensaje.charCodeAt(i) + 65 - desplazamiento) % 26 + 65
-      let mensajeDecifrado = String.fromCharCode(posicionAcsii)
-      mostrarMensaje = mostrarMensaje + mensajeDecifrado 
+      if (mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90) {
+
+        let posicionAcsii = (mensaje.charCodeAt(i) + 65 - desplazamiento) % 26 + 65
+        let mensajeDecifrado = String.fromCharCode(posicionAcsii)
+        mostrarMensaje = mostrarMensaje + mensajeDecifrado
+      }
+      else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <=122) {
+
+        let posicionAcsii = (mensaje.charCodeAt(i) + 85 - desplazamiento) % 26 + 97
+        let mensajeDecifrado = String.fromCharCode(posicionAcsii)
+        mostrarMensaje = mostrarMensaje + mensajeDecifrado
+      }
+      else {
+        mostrarMensaje = mostrarMensaje + mensaje[i]
+      }
     }
     //console.log(mostrarMensaje)
     return mostrarMensaje
