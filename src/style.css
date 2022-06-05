@@ -6,14 +6,14 @@
 
 /*------ Primera página ----*/
 
-/*body {
+body {
     background-image: url(imgCipher/stacked-waves.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
 
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    /*height: 100vh;
     width: 100vW;
     overflow: hidden;*/
 }
@@ -86,8 +86,18 @@ button:hover {
 
 .pagina-codigo {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    height: 700px;
+    
+}
+
+.contenido {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 550px;
 }
 
 h2 {
@@ -126,4 +136,8 @@ textarea{
     align-items: center;
 }
 
+.imagen-msm {
+    margin: 1%;
+    width: 400px;
+}
 

@@ -41,31 +41,33 @@
     <!-------Segunda página----->
       <section class="segunda-pagina">
         <div class="pagina-codigo">
-          <h2>Bienvenido, empieze a cifrar su mensaje</h2>
-          <p>Ingrese el mensaje que quiera cifrar y seleccione el número de desplazamiento</p>
+          <div class="contenido">
+            <h2>Bienvenido, empieze a cifrar su mensaje</h2>
+            <p>Ingrese el mensaje que quiera cifrar y seleccione el número de desplazamiento</p>
           
           <!--Area para ingresar el mensaje ha cifrar-->
-          <label for="textContainer" id="text1">Ingresar mensaje</label>
-          <textarea id="textContainer" placeholder="Escribe tu mensaje ..." required></textarea>
+            <label for="textContainer" id="text1">Ingresar mensaje</label>
+            <textarea id="textContainer" placeholder="Escribe tu mensaje ..." required></textarea>
           
           <!--Selección de desplazamiento-->
-          <label for="offSet">Desplazamiento</label><br>
-          <input type="number" name="offSet" id="offSet" min="1" max="200"><br>
+            <label for="offSet">Desplazamiento</label><br>
+            <input type="number" name="offSet" id="offSet" min="1" max="200"><br>
           
           <!--Botón para cifrar y limpiar-->
-          <div class="buttons">
-            <button id="encodeButton">Cifrar</button>
-            <button id="decodeButton">Descifrar</button>
-            <button id="cleanButton">Limpiar</button>
-          </div>
+            <div class="buttons">
+              <button id="encodeButton">Cifrar</button>
+              <button id="decodeButton">Descifrar</button>
+              <button id="cleanButton">Limpiar</button>
+            </div>
           <!--Area del resultado ya cifrado-->
-          <div class="result-container">
-            <label for="cipherResult" id="text2">Mensaje cifrado</label>
-            <textarea id="cipherResult" placehorder="Aqui se mostrara tu mensaje..."></textarea>
+            <div class="result-container">
+              <label for="cipherResult" id="text2">Mensaje cifrado</label>
+              <textarea id="cipherResult" placehorder="Aqui se mostrara tu mensaje..."></textarea>
+            </div>
           </div>
-
+        
           <div class="imagen">
-            <img src="imgCipher/undraw_mobile_encryption_re_yw3o.svg" alt="imagen mensaje">
+            <img src="imgCipher/online_world.svg" alt="imagen mensaje" class="imagen-msm">
           </div>  
 
         </div>
