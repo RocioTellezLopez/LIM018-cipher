@@ -2,54 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPHERSAFE</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navContainer">
-      <h1 id="brandCipher">CIPHERSAFE</h1>
-      <nav class="lista">
-        <a href="#">Inicio</a>
-        <a href="#">Servicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Contacto</a>
-      </nav>
+  
+    <!---------Encabezado------>
+
+    <header>
+      <img src="imgCipher/Logo.png" alt="logo" class="logo" type="button" id="logo">
+      <!--<div id="menu">
+        <ul>
+          <li id="logo">
+            <a href="#">
+              <img src="imgCipher/Logo.png" alt="Logo">
+            </a>
+          </li>
+          <li><a href="#">Servicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>-->
     </header>
+    <!--------Primera página------>
+    <main>
+      <section class="primera-pagina">
+        <div class="mostrar-pagina">
+          <h1>CIPHERSAFE la manera mas rapida de cifrar y decifrar sus mensaje</h1>
+          <h3>Ingrese un mensaje y seleccione la dificultad del cifrado de manera rapida y facil, empieze ahora!</h3>
+          <button class="boton-inicio">Empezar</button>
+        </div>  
+        <div class="imagen-inicial">
+            <img src="imgCipher/mobile_encryption.svg" alt="celular" class="imagen-phone">
+        </div>
+      </section>
+      
+    <!-------Segunda página----->  
+        <div class="principal-container">
+          <div class="text-container">
+            <!--Area para ingresar el mensaje ha cifrar-->
+            <label for="textContainer" id="text1">Ingresar mensaje</label>
+            <textarea id="textContainer" placeholder="Escribe tu mensaje ..." pattern="^[A-Za-z]+$" tittle="El campo solo acepta letras" required></textarea>
+          </div>
 
-    <main id="mainContent">
-      <div class="optionCipher">
-        <div class="boxCipher">
-          <!--Area para ingresar el mensaje ha cifrar-->
-          <label for="textContainer" id="text1">Ingresar mensaje</label>
-          <textarea id="textContainer" ></textarea>
-        </div>
-        
-        <div id="boxResult">
-          <!--Area del resultado ya cifrado-->
-          <label for="cipherResult" id="text2">Mensaje cifrado</label>
-          <textarea id="cipherResult"></textarea>
-        </div>
+          <div class="container-offset">
+            <!--Selección de desplazamiento-->
+            <label for="offSet">Desplazamiento</label><br>
+            <input type="number" name="offSet" id="offSet" min="1" max="200"><br>
+          </div>
+          <div class="result-container">
+            <!--Area del resultado ya cifrado-->
+            <label for="cipherResult" id="text2">Mensaje cifrado</label>
+            <textarea id="cipherResult" placehorder="Aqui se mostrara tu mensaje..."></textarea>
 
-        <div class="boxOffSet">
-          <!--Selección de desplazamiento-->
-          <label for="offSet">Desplazamiento</label><br>
-          <input type="number" id="offSet" name="offSet" min="1" max="200"><br>
+          </div>
+          <div class="buttons">
+            <!--Botón para cifrar y limpiar-->
+            <button id="encodeButton">Cifrar</button>
+            <button id="decodeButton">Descifrar</button>
+            <button id="cleanButton">Limpiar</button>
+          </div>
         </div>
+        <div class="imagen">
+          <img src="imgCipher/undraw_mobile_encryption_re_yw3o.svg" alt="imagen mensaje">
+        </div>  
+      </main>
 
-        <div class="botones">
-          <!--Botón para cifrar y limpiar-->
-          <button id="cipherButton">Cifrar</button>
-          <button id="cleanButton">Limpiar</button>
-        </div>
-        
-       
-        
-      </div>
-    </main>
+      
+      
+      <footer id="footerContent">
+
+      </footer>
     
-    <footer id="footerContent"></footer>
-
-    <script src="index.js" type="module"></script>
+      <script src="index.js" type="module"></script> 
   </body>
 </html>

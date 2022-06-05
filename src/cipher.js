@@ -1,6 +1,8 @@
 const cipher = {
    // Metodo encode
-   encode: (desplazamiento,mensaje) =>{
+   encode: (desplazamiento,string) =>{
+    let mensaje = string.toUpperCase()
+
     let iteracion = mensaje.length
     let mostrarMensaje = ''
 
@@ -15,7 +17,9 @@ const cipher = {
 
   },
 
-  decode: (desplazamiento,mensaje) =>{
+  decode: (desplazamiento,string) =>{
+    let mensaje = string.toUpperCase()
+
     let iteracion = mensaje.length
     let mostrarMensaje = ''
 
