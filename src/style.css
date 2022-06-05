@@ -34,6 +34,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 530px;
+    margin: 10px 30px;
 }
 
 h1 {
@@ -42,7 +44,6 @@ h1 {
     display: flex;
     font-size: 30px;
     text-align: center;
-    width: 550px;
 }
 
 h3 {
@@ -62,7 +63,7 @@ button {
     cursor: pointer;
     font-size: 20px;
     padding: 15px 20px;
-    margin: 35px 0;
+    margin: 20px 0;
 }
  
 button:hover {
@@ -71,7 +72,11 @@ button:hover {
 
 .imagen-phone {
     margin: 2%;
-    width: 600px;
+    width: 580px;
+    
+}
+.imagen-inicial {
+    width: 380px;
 }
 
 /*----------Segunda página------*/
@@ -89,8 +94,7 @@ button:hover {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    height: 700px;
-    
+    height: 600px;
 }
 
 .contenido {
@@ -98,36 +102,39 @@ button:hover {
     flex-direction: column;
     align-items: center;
     width: 550px;
+    height: 640px;
 }
 
 h2 {
     font-size: 30px;
     text-align: center;
-    color: #9BA3EB; 
+    color: #242F9B; 
 }
 
 p{
-    width: 1000px;
     font-size: 20px;
     text-align: center;
     color:#242F9B
 }
 
-
-input, textarea {
-    width: 150px;
-    height: 50px;
-    background: #DBDFFD;
-    border-radius: 10px;
-    text-align: left;
-    font-size: 10px;
+textarea, #offSet {
+    width: 350px;
+    height: 100px;
+    padding: 1%;
+    font-size: 15px;
+    background-color: #DBDFFD;
+    border-radius: 12px;
+    border: 2px solid #9BA3EB;
 }
 
-textarea{
-    width: 350px;
-    height: 130px;
+label {
     padding: 1%;
-    text-align: center;
+}
+
+#offSet {
+    width: 80px;
+    height: 25px;
+
 }
 
 .result-container {
@@ -138,6 +145,12 @@ textarea{
 
 .imagen-msm {
     margin: 1%;
-    width: 400px;
+    width: 380px;
+    padding: 1%;
 }
+
+.buttons {
+    height: 100px;
+    margin: 15px;
+} 
 

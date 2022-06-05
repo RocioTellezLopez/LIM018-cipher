@@ -8,7 +8,7 @@ let botonLimpiar = document.getElementById('cleanButton')
 let resultadoTexto = document.getElementById('cipherResult')
 
 botonCifrar.addEventListener('click', () =>{
-    let textValue = textoIngresado.value.toUpperCase()
+    let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
 
     let mostrar = cipher.encode(offSetValue,textValue)
@@ -19,7 +19,7 @@ botonCifrar.addEventListener('click', () =>{
 })
 
 botonDescifrar.addEventListener('click', () =>{
-    let textValue = textoIngresado.value.toUpperCase()
+    let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
 
     let mostrar = cipher.decode(offSetValue,textValue)
