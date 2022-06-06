@@ -1,7 +1,7 @@
 const cipher = {
    // Metodo encode
    encode: (desplazamiento,string) =>{
-    let mensaje = string
+    let mensaje = string //string.toUpperCase() convertia los textos a mayusculas pero no mostraba resultado en minusculas
 
     let iteracion = mensaje.length
     let mostrarMensaje = ''

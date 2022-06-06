@@ -30,7 +30,10 @@ botonDescifrar.addEventListener('click', () =>{
 
 
 botonLimpiar.addEventListener('click', () =>{
-    //document.getElementById('mainContent').reset()
+    textoIngresado.value = ''
+    offSet.value = ''
+    resultadoTexto.value = ''
+
 })
 
 console.log(cipher);
