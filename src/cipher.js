@@ -13,15 +13,15 @@ const cipher = {
         let mensajeCifrado = String.fromCharCode(posicionAcsii)
         
         mostrarMensaje = mostrarMensaje + mensajeCifrado
-      }
-      else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122) {
+
+      } else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122) {
 
         let posicionAcsii =(mensaje.charCodeAt(i) - 97 + desplazamiento) % 26 + 97
         let mensajeCifrado = String.fromCharCode(posicionAcsii)
         
         mostrarMensaje = mostrarMensaje + mensajeCifrado
-      }
-      else {
+
+      } else {
         mostrarMensaje = mostrarMensaje + mensaje[i]
       }
     }  
@@ -44,7 +44,7 @@ const cipher = {
         mostrarMensaje = mostrarMensaje + mensajeDecifrado
       }
       else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <=122) {
-
+        //Sumamos 85 (o 111 e incluso -45) para que nuestro resultado nos de residuo de 26.
         let posicionAcsii = (mensaje.charCodeAt(i) + 85 - desplazamiento) % 26 + 97
         let mensajeDecifrado = String.fromCharCode(posicionAcsii)
         mostrarMensaje = mostrarMensaje + mensajeDecifrado
