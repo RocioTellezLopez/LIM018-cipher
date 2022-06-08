@@ -7,7 +7,7 @@
 /*------ Primera página ----*/
 
 body {
-    background-image: url(imgCipher/stacked-waves.png);
+    /*background-image: url(imgCipher/stacked-waves.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -115,7 +115,7 @@ h2 {
     color: #242F9B; 
 }
 
-p{
+h4 {
     font-size: 20px;
     text-align: center;
     color:#242F9B
@@ -158,3 +158,8 @@ label {
     margin: 15px;
 } 
 
+p {
+    font-size: 20px;
+    color: rgb(230, 82, 82);
+    text-align: center;
+}

@@ -43,16 +43,16 @@
         <div class="pagina-codigo">
           <div class="contenido">
             <h2>Bienvenido, empieze a cifrar su mensaje</h2>
-            <p>Ingrese el mensaje que quiera cifrar y seleccione el número de desplazamiento</p>
+            <h4>Ingrese el mensaje que quiera cifrar y seleccione el número de desplazamiento</h4>
           
           <!--Area para ingresar el mensaje ha cifrar-->
             <label for="textContainer" id="text1">Ingresar mensaje</label>
-            <textarea id="textContainer" placeholder="Escribe tu mensaje ..." required></textarea>
+            <textarea id="textContainer" name="textContainer" placeholder="Escribe tu mensaje ..."></textarea>
           
           <!--Selección de desplazamiento-->
             <label for="offSet">Desplazamiento</label><br>
-            <input type="number" name="offSet" id="offSet" min="1" max="200"><br>
-          
+            <input type="number" name="offSet" id="offSet" min="1" max="100"><br>
+            <p id="mensajeAlerta" name="mensajeAlerta"></p>
           <!--Botón para cifrar y limpiar-->
             <div class="buttons">
               <button id="encodeButton">Cifrar</button>
@@ -62,7 +62,7 @@
           <!--Area del resultado ya cifrado-->
             <div class="result-container">
               <label for="cipherResult" id="text2">Mensaje cifrado</label>
-              <textarea id="cipherResult" placehorder="Aqui se mostrara tu mensaje..."></textarea>
+              <textarea id="cipherResult" name="cipherResult" placeholder="Aquí se mostrara tu mensaje"></textarea>
             </div>
           </div>
         
