@@ -11,32 +11,40 @@ let mensajeAlerta = document.getElementById('mensajeAlerta')
 botonCifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
-    if (textValue !== '') {
+    if (textValue !== '' && offSetValue !== '') {
         let mostrar = cipher.encode(offSetValue,textValue)
         //let mostrar = cipher.encode(offSet, textoIngresado)
         resultadoTexto.innerHTML = mostrar
         //console.log(mostrar)
-    } else {
-        mensajeAlerta.innerHTML = 'No ingresaste tu mensaje'
+        mensajeAlerta.innerHTML = ''
     }
-    
+    else if (textValue === '' && offSetValue === '') {
+        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar tu mensaje'
+    } else {
+        mensajeAlerta.innerHTML = 'Ops! No ingresaste datos'
+    }
+
 })
 
 botonDescifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
-
-    let mostrar = cipher.decode(offSetValue,textValue)
-    //let mostrar = cipher.encode(offSet, textoIngresado)
-    resultadoTexto.innerHTML = mostrar
-    //console.log(mostrar)
+    if (textValue !== '' && offSetValue !== '') {
+        let mostrar = cipher.decode(offSetValue,textValue)
+        resultadoTexto.innerHTML = mostrar
+        mensajeAlerta.innerHTML = ''
+    } else if (offSetValue !== ''){
+        mensajeAlerta.innerHTML = 'Ops! No ingresaste tu mensaje'
+    } else {
+        mensajeAlerta.innerHTML = 'Ops! No ingresaste datos'
+    }
 })
 
 botonLimpiar.addEventListener('click', () =>{
     textoIngresado.value = ''
     offSet.value = ''
-    resultadoTexto.value = ''
-
+    resultadoTexto.innerHTML = ''
+    mensajeAlerta.innerHTML = ''
 })
 
 console.log(cipher);
