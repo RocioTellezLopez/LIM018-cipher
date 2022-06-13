@@ -1,16 +1,20 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    
     /*border: 1px solid black;*/
 }
 
 /*------ Primera página ----*/
 
 body {
-    /*background-image: url(imgCipher/stacked-waves.png);
+    background-image: url(imgCipher/stacked-waves.png);
     background-repeat: no-repeat;
-    background-position: right;
+    /*background-position: right;*/
     background-size: cover;
+    height: 100%;
+
 
     font-family: Arial, Helvetica, sans-serif;
     /*height: 100vh;
@@ -18,8 +22,48 @@ body {
     overflow: hidden;*/
 }
 
-.logo {
-    margin: 1%;
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    /*background-color: #646FD4;*/
+}
+
+.lista-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    padding: 1%;
+    width: 500px;
+    height: 60px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+li {
+    width: 158px;
+    padding: 10px 30px;
+    align-content: center;
+    
+    text-align: center;
+
+}
+
+li:hover {
+    background-color: #242F9B;
+}
+
+.logo-imagen {
+    padding: 1%;
+    width: auto;
     cursor: pointer;
 }
 
@@ -27,15 +71,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 60px 20px;
 }
 
 .mostrar-pagina {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 530px;
-    margin: 10px 30px;
+    justify-content: space-around;
+    width: 550px;
 }
 
 h1 {
@@ -90,7 +134,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 85vh;
+    height: 50%;
 }
 
 .pagina-codigo {
@@ -98,7 +142,6 @@ a{
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    height: 600px;
 }
 
 .contenido {
@@ -119,6 +162,12 @@ h4 {
     font-size: 20px;
     text-align: center;
     color:#242F9B
+}
+
+p {
+    font-size: 20px;
+    color: rbg(230, 82, 82);
+    text-align: center;
 }
 
 textarea, #offSet {
@@ -157,9 +206,3 @@ label {
     height: 100px;
     margin: 15px;
 } 
-
-p {
-    font-size: 20px;
-    color: rgb(230, 82, 82);
-    text-align: center;
-}
