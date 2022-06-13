@@ -8,9 +8,12 @@ let botonLimpiar = document.getElementById('cleanButton')
 let resultadoTexto = document.getElementById('cipherResult')
 let mensajeAlerta = document.getElementById('mensajeAlerta')
 
+
+//textValue === '' && offSet.value !== ''
 botonCifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
+    console.log(offSet.value == '')
     if (textValue !== '' && offSetValue !== '') {
         let mostrar = cipher.encode(offSetValue,textValue)
         //let mostrar = cipher.encode(offSet, textoIngresado)
@@ -18,8 +21,9 @@ botonCifrar.addEventListener('click', () =>{
         //console.log(mostrar)
         mensajeAlerta.innerHTML = ''
     }
-    else if (textValue === '' && offSetValue === '') {
-        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar tu mensaje'
+    else if (offSet.value == '') {
+        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar mensaje'
+        console.log('hola')
     } else {
         mensajeAlerta.innerHTML = 'Ops! No ingresaste datos'
     }
