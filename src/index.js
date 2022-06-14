@@ -13,32 +13,32 @@ let mensajeAlerta = document.getElementById('mensajeAlerta')
 botonCifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
-    console.log(offSet.value == '')
-    if (textValue !== '' && offSetValue !== '') {
+    if (textValue !== '' && !isNaN(offSetValue)) {
         let mostrar = cipher.encode(offSetValue,textValue)
         //let mostrar = cipher.encode(offSet, textoIngresado)
         resultadoTexto.innerHTML = mostrar
         //console.log(mostrar)
         mensajeAlerta.innerHTML = ''
-    }
-    else if (offSet.value == '') {
+    } else if (textValue !== '' && isNaN(offSetValue)) {
+        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar desplazamiento'
+    } else if (textValue ==='' && !isNaN(offSetValue)) {
         mensajeAlerta.innerHTML = 'Ops! Te falto ingresar mensaje'
-        console.log('hola')
     } else {
         mensajeAlerta.innerHTML = 'Ops! No ingresaste datos'
     }
-
 })
 
 botonDescifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
-    if (textValue !== '' && offSetValue !== '') {
+    if (textValue !== '' && !isNaN(offSetValue)) {
         let mostrar = cipher.decode(offSetValue,textValue)
         resultadoTexto.innerHTML = mostrar
         mensajeAlerta.innerHTML = ''
-    } else if (offSetValue !== ''){
-        mensajeAlerta.innerHTML = 'Ops! No ingresaste tu mensaje'
+    } else if (textValue !== '' && isNaN(offSetValue)) {
+        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar desplazamiento'
+    } else if (textValue ==='' && !isNaN(offSetValue)) {
+        mensajeAlerta.innerHTML = 'Ops! Te falto ingresar mensaje'
     } else {
         mensajeAlerta.innerHTML = 'Ops! No ingresaste datos'
     }
