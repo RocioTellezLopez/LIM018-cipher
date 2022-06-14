@@ -9,7 +9,7 @@ let resultadoTexto = document.getElementById('cipherResult')
 let mensajeAlerta = document.getElementById('mensajeAlerta')
 
 
-//textValue === '' && offSet.value !== ''
+//textValue === '' && offSetValue !== '' 
 botonCifrar.addEventListener('click', () =>{
     let textValue = textoIngresado.value
     let offSetValue = parseInt(offSet.value)
