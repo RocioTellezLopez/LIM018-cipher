@@ -10,10 +10,10 @@
   
     <!---------Encabezado------>
 
-    <header>
+    <header id="inicio">
       <nav>
           <div class="logo-imagen">
-            <img src="imgCipher/Logo.png" alt="logo" type="button" id="logo">
+            <img src="./imgCipher/Logo.png" alt="Logo" id="logo">
           </div>
           <div class="lista-nav">
             <li><a href="#">Servicio</a></li>
@@ -24,21 +24,25 @@
     </header>
     <!--------Primera página------>
     <main>
-      <section class="primera-pagina">
+      <section class="primera-pagina" id="primera-pagina">
         <div class="contenido-inicial">
           <h1>CIPHERSAFE la manera mas rapida de cifrar y decifrar sus mensaje</h1>
           <h3>Ingrese un mensaje y seleccione la dificultad del cifrado de manera rapida y facil, empieze ahora!</h3>
           <button class="boton-inicio"><a href="#segundaPagina" id="botonInicio">Empezar</a></button>
         </div>  
         <div class="imagen-inicial">
-            <img src="imgCipher/mobile_encryption.svg" alt="Persona con un celular" id="imagen-phone">
+            <img src="./imgCipher/mobile_encryption.svg" alt="Persona con un celular" id="imagen-phone">
         </div>
       </section>
       
       <!-------Segunda página----->
       <section class="segunda-pagina" id="segundaPagina">
         <div class="contenido-segundo">
-          <h2>Bienvenido, empieze a cifrar su mensaje</h2>
+          <div class="bienvenida">
+            <a href="#inicio"><img src="./imgCipher/iconoVolver.svg" alt="Icono de volver pagina principal" id="iconoVolver"></a>
+            <h2>Bienvenido, empieze a cifrar su mensaje</h2>
+          </div>
+          
           <h4>Ingrese el mensaje que quiera cifrar y seleccione el número de desplazamiento</h4>
           <div class="contenido-principal">
             <div class="box">
@@ -68,8 +72,7 @@
         </div>
       </section>
     </main> 
-    <footer id="footerContent">   </footer>
-    
+    <footer id="footerContent">Elaborado por Yaneht Rocio Tellez Lopez en Laboratoria</footer>
     <script src="index.js" type="module"></script> 
   </body>
 </html>

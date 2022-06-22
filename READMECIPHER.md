@@ -30,7 +30,7 @@ Facilita al usuario de manera sencilla y rapidad encriptar mensajes.
 
 ## 3. Interfaz de Usuario (UI)
 
-La interfaz de la aplicación web  permite al usuario:
+La interfaz de la aplicación web permite al usuario:
 
 * El usuario puede elegir un desplazamiento (_offset_) indicando cuántas posiciones quiere que el cifrado desplace cada caracter.
 * El usuario puede ingresar un mensaje (texto) que desea cifrar o descifrar.
@@ -42,10 +42,25 @@ La interfaz de la aplicación web  permite al usuario:
 
 ### Prototipo en Figma
 
-La realización del prototipo del proyecto se realizo en Figma.
+La realización del [prototipo del proyecto](https://www.figma.com/proto/5IX3tjz0fEknewWdULJ9uS/CIPHERSAFE-v01?node-id=1%3A2&starting-point-node-id=1%3A2) se realizo en Figma.
 
+Vistas del prototipo:
+![Vista 1 del prototipo en Figma](./src/imgCipher/figma1.jpg)
+
+
+![Vista 2 del prototipo en Figma](./src/imgCipher/figma2.jpg)
 
 ### Prototipo Final
+
+Presentación del [proyecto Cipher](https://rociotellezlopez.github.io/LIM018-cipher/src/).
+
+Vistas de la Web App CIPHERSAFE:
+
+![Vista 1](./src/imgCipher/CIPHERSAFE%20-%20vista1.jpg)
+
+![Vista 2](./src/imgCipher/CIPHERSAFE%20-%20vista2.jpg)
+
+
 
 ***
 
